@@ -1,0 +1,26 @@
+Component Development:
+<template>
+  <div>
+    <h1>{{ message }}</h1>
+    <button @click="increment">Increment</button>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      count: 0
+    };
+  },
+  methods: {
+    increment() {
+      this.count++;
+    }
+  }
+};
+</script>
+
+<style scoped>
+/* Styles specific to this component */
+</style>
